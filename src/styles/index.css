@@ -1,0 +1,45 @@
+@import url('Nav.css');
+@import url('Cities.css');
+@import url('ApiKeyEntrace.css');
+@import url('Home.css');
+@import url('Weather.css');
+@import url('404.css');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, #0F2027, #203A43, #2C5364);
+    min-height: 100vh;
+}
+
+.cities-container,
+.map-container,
+.home-container,
+.weather-container,
+.api-keys-entrace-container {
+    opacity: 0;
+    animation: op .350s linear forwards;
+}
+
+#notice-line {
+    text-align: center;
+    margin-block: 15px;
+    margin-top: px;
+    font-size: .950rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    color: #ccc;
+}
+
+@keyframes op {
+    from { 
+        transform: translateX(-35px);
+        opacity: 0; }
+    to { 
+        transform: translateX(0px);
+        opacity: 1; }
+}

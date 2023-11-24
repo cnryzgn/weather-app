@@ -1,0 +1,246 @@
+.api-keys-entrace-container {
+    width: 90%;
+    max-width: 960px;
+    min-height: 40vh;
+    height: auto;
+    border-radius: 12px;
+    margin: 50px auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.top-side h1 {
+    color: #eee;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.top-side p {
+    font-size: 19px;
+    color: antiquewhite;
+}
+
+.top-side span {
+    color: #6dd5ed;
+    font-family: monospace;
+}
+
+.top-side a {
+    text-decoration: none;
+    color: blueviolet;
+    font-weight: 600;
+    font-family: monospace;
+}
+
+.top-side a:hover {
+    transition: .62s;
+    color: aquamarine;
+    text-decoration: underline;
+}
+
+.notification-container {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #eee;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.notification-container h1 {
+    font-size: 3.2rem;
+    margin-bottom: 60px;
+}
+
+.notification-container .control-btns {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding-top: 15px;
+}
+
+#api-key-change-btn,
+#show-cities-btn {
+    width: 50%;
+    height: 70px;
+    border-radius: 15px;
+    border: 1px solid transparent;
+    background-color: blueviolet;
+    color: #eee;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: .350s;
+}
+
+#show-cities-btn {
+    color: blueviolet;
+    background-color: #eee;
+}
+
+#api-key-change-btn:hover {
+    background-color: rgb(93, 20, 161);
+    color: #eee;
+    box-shadow: 0 0 7px blueviolet;
+
+}
+#show-cities-btn:hover {
+    box-shadow: 0 0 7px #ccc;
+    background-color: plum;
+    color: #eee;
+}
+
+.form-wrapper {
+    width: 60%;
+    height: 70px;
+    border-radius: 50px;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.form-wrapper form {
+    width: 100%;
+    justify-content: space-between;
+}
+.form-wrapper input {
+    width: 85%;
+    height: 70px;
+    border-radius: 20px;
+    padding-left: 12px;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    font-size: 15px;
+    font-weight: 700;
+    color: #4fa7bb;
+}
+
+.form-wrapper input::placeholder {
+    color: #4fa7bb;
+}
+
+.form-wrapper button {
+    width: 15%;
+    height: 70px;
+    border: 1px solid transparent;
+    border-radius: 35px;
+    cursor: pointer;
+    background-color: #5aadc0;
+    color: #eee;
+    font-weight: 700;
+}
+
+.form-wrapper button:hover {
+    background-color: #6dd5ed;
+    transition: .5s;
+}
+
+#error-message {
+    display: none;
+    opacity: 0;
+    width: 60%;
+    background-color: rgba(163, 35, 35, 0.685);
+    padding: 25px 15px;
+    border-radius: 15px;
+    color: #eee;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: -10px;
+    text-align: center;
+    line-height: 23px;
+    transition: .32s;
+    animation: opacity .5s ease-in-out;
+}
+
+#error-message:hover {
+    background-color: rgb(163, 35, 35);
+    color: #fff;
+}
+
+.show-error-message {
+    display: block !important;
+    opacity: 1 !important;
+}
+
+.demo-link-wrapper {
+    margin-top: 10vh;
+}
+
+#demo-link {
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    line-height: 40px;
+    padding: 10px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    outline: none;
+    background-color: #5aadc0;
+    text-decoration: underline;
+    border-radius: 5px;
+}
+
+#demo-link:hover {
+    transition: .5s;
+    background-color: #6dd5ed;
+}
+
+@media (max-width: 1020px) {
+    .api-keys-entrace-container {
+        width: 100%;
+    }
+    .form-wrapper {
+        width: 100%;
+        height: auto;
+        background-color: transparent;
+        display: flex;
+    }
+
+    .top-side p {
+        margin-top: 50px;
+    }
+    
+    .form-wrapper form {
+        display: flex;
+        gap: 20px;        
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-wrapper input {
+        width: 100%;
+        height: 75px;
+        background-color: #eee;
+    }
+
+    .form-wrapper button {
+        width: 100%;
+        border-radius: 12px;
+    }
+
+    #error-message {
+        width: 100%;
+    }
+
+    .notification-container .control-btns {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    #api-key-change-btn,
+    #show-cities-btn {
+        width: 100%;
+    }
+}
