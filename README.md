@@ -2,14 +2,14 @@
 
 ## Links
 
-[Screenshots](https://github.com/cnryzgn/weather-app-backup#Screenshots)<br>
-[Setup](https://github.com/cnryzgn/weather-app-backup#Setup)<br>
+[Screenshots](https://github.com/cnryzgn/weather-app#Screenshots)<br>
+[Setup](https://github.com/cnryzgn/weather-app#Setup)<br>
 
 
 ## Screenshots
-![](https://github.com/cnryzgn/weather-app-backup/blob/main/screenshots/weather-cities.png)
-![](https://github.com/cnryzgn/weather-app-backup/blob/main/screenshots/weather-cities-map.png)
-![](https://github.com/cnryzgn/weather-app-backup/blob/main/screenshots/weather-city.png)
+![](https://github.com/cnryzgn/weather-app/blob/main/screenshots/weather-cities.png)
+![](https://github.com/cnryzgn/weather-app/blob/main/screenshots/weather-cities-map.png)
+![](https://github.com/cnryzgn/weather-app/blob/main/screenshots/weather-city.png)
 
 
 ## Setup
@@ -17,10 +17,10 @@
 # Before start make sure to have Git and Node
 
 # clone this repository
-$ git clone https://github.com/cnryzgn/weather-app-backup.git
+$ git clone https://github.com/cnryzgn/weather-app.git
 
 # open the project folder
-$ cd weather-app-backup
+$ cd weather-app
 
 # install project
 $ npm install
