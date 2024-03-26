@@ -1,0 +1,31 @@
+.not-found-container {
+    width: 100%;
+    height: 80vh;
+    display: grid;
+    place-content: center;
+    gap: 15px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #eee;
+}
+
+.not-found-container > h1 {
+    font-size: 13rem;
+    font-weight: 700;
+}
+
+.not-found-container > h2 {
+    font-size: 4rem;
+}
+
+.not-found-container > a {
+    font-size: 1rem;
+    margin-top: 30px;
+    color: #ccffff;
+}
+
+@media (max-width: 1020px) {
+    .not-found-container h1 { font-size: 7rem; }
+    .not-found-container h2 { font-size: 3rem; }
+    .not-found-container a { font-size: 1rem; }
+}
